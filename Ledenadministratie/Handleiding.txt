@@ -1,0 +1,2 @@
+De map Ledemadministratie in de root folder uitpakken. Eventueel de variabelen host, data, user en pass veranderen in het bestand model/login.php. Daarna is de Ledemadministratie app te gebruiken via view/index.php.
+Voor het gebruik van de app nog de inserts uit het SQL creatiescript toevoegen aan de database.

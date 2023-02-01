@@ -1,0 +1,164 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav content content"
+    "footer footer footer";
+  grid-template-rows: 100px 1fr 60px;
+  grid-template-columns: 20% 1fr 15%;
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+}
+.header {
+  grid-area: header;
+  text-align: center;
+  position: relative;
+}
+.footer {
+  grid-area: footer;
+  text-align: center;
+}
+.content {
+  grid-area: content;
+}
+.nav {
+  grid-area: nav;
+}
+
+header,
+footer,
+article,
+nav,
+div {
+  padding: 5px;
+}
+
+.nav a {
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.btn-group button {
+  background-color: #eff8f5; /* Green background */
+  border: 1px solid rgb(8, 10, 8); /* Green border */
+  color: rgb(10, 9, 9); /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: fit-content;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(uneven) {
+  background-color: #dddddd;
+}
+
+.btn-table {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 0px;
+}
+
+form {
+  display: table;
+}
+p {
+  display: table-row;
+}
+label {
+  display: table-cell;
+}
+input {
+  display: table-cell;
+}
+select {
+  display: table-cell;
+}
+
+.btn-toevoegen {
+  position: relative;
+  margin-left: 80%;
+}
+
+.input-submit {
+  display: table-cell;
+  padding-block: 10%;
+}
+
+.caption{
+  display: table-caption;
+}
+.table {
+  display: table;
+  border-collapse: collapse;
+}
+.table-header {
+  display: table-header-group;
+  background-color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.table-header-cell {
+  display: table-cell;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.table-row {
+  display: table-row;
+}
+
+.table-cell {
+  display: table-cell;
+  border: 1px solid #dddddd;
+  text-align: center;
+}
+
+.center {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top:0;
+  bottom: 300;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.error{
+  color: red;
+}
+
+.succes{
+  color: green;
+}
+
+.center2 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
